@@ -12,18 +12,24 @@ struct CounterView: View {
     
     var body: some View {
         VStackLayout{
+            Spacer()
+            
             count
             
             btnsStructure
+            
+            Spacer()
+            
+            screenTheme
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.primary)
+        .background(vm.themeStatus == .dark ? Color.primary : Color.cyan)
     }
     
     private var count: some View {
         Text("\(Int(vm.count))")
             .frame(maxWidth: .infinity)
-            .foregroundColor(.purple)
+            .foregroundColor(vm.themeStatus == .dark ? .purple : .white)
             .font(.system(size: 150, weight: .black))
             .lineLimit(1)
     }
@@ -39,6 +45,22 @@ struct CounterView: View {
             btnConstruct(imageName: "plus", activate: .constant(true), direction: .left)
                 
         }
+    }
+    
+    private var screenTheme: some View {
+        Button(action: {
+            vm.changeThemeStatus()
+        }, label: {
+            Image(systemName: vm.themeStatus == .light ? "sun.max" : "sun.max.fill")
+                .resizable()
+                .scaledToFit()
+                .padding()
+                .frame(maxWidth: UIScreen.main.bounds.width/6)
+                .foregroundColor(vm.themeStatus == .dark ? .mint : .white)
+                .background(vm.themeStatus == .light ? vm.lightColors : vm.darkColors)
+                .cornerRadius(UIScreen.main.bounds.width/3)
+
+        })
     }
     
     private func btnConstruct(imageName: String, activate: Binding<Bool>, direction: ButtonsDirection) -> some View {
@@ -60,14 +82,14 @@ struct CounterView: View {
                     }
                 }
                 .frame(maxWidth: UIScreen.main.bounds.width/2.5, maxHeight: UIScreen.main.bounds.width/2.5)
-                .foregroundStyle(Gradient(colors: [.blue, .purple]))
+                .foregroundStyle(vm.themeStatus == .light ? vm.lightColors : vm.darkColors)
                 .cornerRadius(20)
                 
                 Image(systemName: imageName)
                     .resizable()
                     .scaledToFit()
                     .frame(maxWidth: UIScreen.main.bounds.width/7)
-                    .foregroundColor(.mint)
+                    .foregroundColor(vm.themeStatus == .dark ? .mint : .white)
                     .padding( direction == .right ? .leading : .trailing)
                     
             }
