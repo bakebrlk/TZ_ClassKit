@@ -7,12 +7,20 @@
 
 import SwiftUI
 
-struct CounterVM: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+final class CounterVM: ObservableObject {
+    @StateObject public static var shared: CounterVM = CounterVM()
+    
+    @Published public var count: CGFloat = 0
+    
+    public func countPlus() {
+        withAnimation{
+            count += 1
+        }
     }
-}
-
-#Preview {
-    CounterVM()
+    
+    public func revalue() {
+        withAnimation {
+            count = 0
+        }
+    }
 }
