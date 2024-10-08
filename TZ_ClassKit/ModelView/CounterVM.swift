@@ -8,7 +8,7 @@
 import SwiftUI
 
 final class CounterVM: ObservableObject {
-    @StateObject public static var shared: CounterVM = CounterVM()
+    @ObservedObject public static var shared: CounterVM = CounterVM()
     
     @Published public var count: CGFloat = 0
     @Published public var themeStatus: ScreenThemeStatus = .dark
