@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B2664A92CB54D6F000CDF19 /* TZ_ClassKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2664A82CB54D6F000CDF19 /* TZ_ClassKitApp.swift */; };
-		8B2664AB2CB54D6F000CDF19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2664AA2CB54D6F000CDF19 /* ContentView.swift */; };
 		8B2664AD2CB54D72000CDF19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2664AC2CB54D72000CDF19 /* Assets.xcassets */; };
 		8B2664B02CB54D72000CDF19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2664AF2CB54D72000CDF19 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		8B2664A52CB54D6F000CDF19 /* TZ_ClassKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TZ_ClassKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2664A82CB54D6F000CDF19 /* TZ_ClassKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZ_ClassKitApp.swift; sourceTree = "<group>"; };
-		8B2664AA2CB54D6F000CDF19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B2664AC2CB54D72000CDF19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B2664AF2CB54D72000CDF19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				8B2664A82CB54D6F000CDF19 /* TZ_ClassKitApp.swift */,
-				8B2664AA2CB54D6F000CDF19 /* ContentView.swift */,
 				8B2664AC2CB54D72000CDF19 /* Assets.xcassets */,
 				8B2664AE2CB54D72000CDF19 /* Preview Content */,
 			);
@@ -137,7 +134,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B2664AB2CB54D6F000CDF19 /* ContentView.swift in Sources */,
 				8B2664A92CB54D6F000CDF19 /* TZ_ClassKitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
