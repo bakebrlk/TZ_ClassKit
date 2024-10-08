@@ -51,9 +51,10 @@
 		8B2664A72CB54D6F000CDF19 /* TZ_ClassKit */ = {
 			isa = PBXGroup;
 			children = (
-				8B2664A82CB54D6F000CDF19 /* TZ_ClassKitApp.swift */,
-				8B2664AA2CB54D6F000CDF19 /* ContentView.swift */,
-				8B2664AC2CB54D72000CDF19 /* Assets.xcassets */,
+				8B2664B92CB55181000CDF19 /* ModelView */,
+				8B2664B82CB5517A000CDF19 /* View */,
+				8B2664B72CB55174000CDF19 /* Model */,
+				8B2664B62CB55164000CDF19 /* Main */,
 				8B2664AE2CB54D72000CDF19 /* Preview Content */,
 			);
 			path = TZ_ClassKit;
@@ -65,6 +66,37 @@
 				8B2664AF2CB54D72000CDF19 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B2664B62CB55164000CDF19 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8B2664A82CB54D6F000CDF19 /* TZ_ClassKitApp.swift */,
+				8B2664AA2CB54D6F000CDF19 /* ContentView.swift */,
+				8B2664AC2CB54D72000CDF19 /* Assets.xcassets */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8B2664B72CB55174000CDF19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B2664B82CB5517A000CDF19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B2664B92CB55181000CDF19 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
