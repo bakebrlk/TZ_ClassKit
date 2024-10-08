@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum ButtonsDirection: Codable{
-    case left
-    case right
+enum ButtonsDirection: String, Codable{
+    case left = "left"
+    case right = "right"
 }
