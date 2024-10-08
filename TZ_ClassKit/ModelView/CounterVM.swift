@@ -11,6 +11,20 @@ final class CounterVM: ObservableObject {
     @StateObject public static var shared: CounterVM = CounterVM()
     
     @Published public var count: CGFloat = 0
+    @Published public var themeStatus: ScreenThemeStatus = .dark
+    
+    public var lightColors: Gradient = Gradient(colors: [.yellow, .orange])
+    public var darkColors: Gradient = Gradient(colors: [.blue, .purple])
+    
+    public func changeThemeStatus() {
+        withAnimation {
+            if themeStatus == .dark {
+                themeStatus = .light
+            }else{
+                themeStatus = .dark
+            }
+        }
+    }
     
     public func countPlus() {
         withAnimation{
