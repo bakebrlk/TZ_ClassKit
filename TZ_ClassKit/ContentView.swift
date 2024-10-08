@@ -5,6 +5,7 @@
 //  Created by bakebrlk on 08.10.2024.
 //
 
+// create logic gitFlow
 import SwiftUI
 
 struct ContentView: View {
