@@ -12,6 +12,10 @@
 		8B2664B02CB54D72000CDF19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2664AF2CB54D72000CDF19 /* Preview Assets.xcassets */; };
 		8B2664BB2CB551E9000CDF19 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2664BA2CB551E9000CDF19 /* CounterView.swift */; };
 		8B2664BD2CB55213000CDF19 /* CounterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2664BC2CB55213000CDF19 /* CounterVM.swift */; };
+		8B2664BF2CB5579F000CDF19 /* LeftTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2664BE2CB5579F000CDF19 /* LeftTriangle.swift */; };
+		8B2664C12CB5585E000CDF19 /* RightTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2664C02CB5585E000CDF19 /* RightTriangle.swift */; };
+		8B2664C32CB558F8000CDF19 /* ButtonsDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2664C22CB558F8000CDF19 /* ButtonsDirection.swift */; };
+		8B2664C52CB56237000CDF19 /* ScreenThemeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2664C42CB56237000CDF19 /* ScreenThemeStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		8B2664AF2CB54D72000CDF19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B2664BA2CB551E9000CDF19 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		8B2664BC2CB55213000CDF19 /* CounterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterVM.swift; sourceTree = "<group>"; };
+		8B2664BE2CB5579F000CDF19 /* LeftTriangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftTriangle.swift; sourceTree = "<group>"; };
+		8B2664C02CB5585E000CDF19 /* RightTriangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightTriangle.swift; sourceTree = "<group>"; };
+		8B2664C22CB558F8000CDF19 /* ButtonsDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsDirection.swift; sourceTree = "<group>"; };
+		8B2664C42CB56237000CDF19 /* ScreenThemeStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenThemeStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,10 @@
 		8B2664B72CB55174000CDF19 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B2664BE2CB5579F000CDF19 /* LeftTriangle.swift */,
+				8B2664C02CB5585E000CDF19 /* RightTriangle.swift */,
+				8B2664C22CB558F8000CDF19 /* ButtonsDirection.swift */,
+				8B2664C42CB56237000CDF19 /* ScreenThemeStatus.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,8 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B2664BD2CB55213000CDF19 /* CounterVM.swift in Sources */,
+				8B2664C52CB56237000CDF19 /* ScreenThemeStatus.swift in Sources */,
 				8B2664A92CB54D6F000CDF19 /* TZ_ClassKitApp.swift in Sources */,
+				8B2664C32CB558F8000CDF19 /* ButtonsDirection.swift in Sources */,
+				8B2664C12CB5585E000CDF19 /* RightTriangle.swift in Sources */,
 				8B2664BB2CB551E9000CDF19 /* CounterView.swift in Sources */,
+				8B2664BF2CB5579F000CDF19 /* LeftTriangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
