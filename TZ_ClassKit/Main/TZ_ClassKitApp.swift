@@ -11,7 +11,7 @@ import SwiftUI
 struct TZ_ClassKitApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CounterView()
         }
     }
 }
